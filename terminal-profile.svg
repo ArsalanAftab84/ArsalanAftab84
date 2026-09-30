@@ -1,0 +1,71 @@
+<svg fill="none" viewBox="0 0 800 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="margin: 0; padding: 25px; height: 100%; background-color: #0a0e17; color: #00ffcc; font-family: 'Courier New', Courier, monospace; display: flex; box-sizing: border-box; overflow: hidden; position: relative; border: 1px solid #0055ff; border-radius: 8px;">
+      
+      <!-- CSS Animation for Scanning Line -->
+      <style>
+        @keyframes scan {
+          0% { top: -10%; }
+          100% { top: 110%; }
+        }
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+        .scan-line {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: rgba(0, 255, 204, 0.8);
+          box-shadow: 0 0 15px #00ffcc;
+          animation: scan 3s linear infinite;
+          z-index: 10;
+        }
+        .content { display: flex; width: 100%; z-index: 1; }
+        .ascii-art { width: 35%; font-size: 11px; line-height: 11px; white-space: pre; color: #0066ff; }
+        .details { width: 65%; font-size: 15px; line-height: 1.6; text-shadow: 0 0 3px rgba(0,255,204,0.5); }
+        .highlight { color: #ffffff; font-weight: bold; }
+        .cursor { animation: blink 1s step-end infinite; }
+      </style>
+
+      <!-- Scanning Line -->
+      <div class="scan-line"></div>
+      
+      <div class="content">
+        <!-- Left Side: Digital Face / ASCII -->
+        <div class="ascii-art">
+           @@@@@@@@@@@@@@@@@@
+         @@@@@@@@@@@@@@@@@@@@@@
+        @@@@                @@@@
+       @@@@                  @@@@
+       @@@    [0]      [0]    @@@
+       @@@         ||         @@@
+       @@@@       \__/       @@@@
+        @@@@                @@@@
+         @@@@@@@@@@@@@@@@@@@@@@
+           @@@@@@@@@@@@@@@@@@
+        </div>
+
+        <!-- Right Side: Terminal Data -->
+        <div class="details">
+          <div>> SYSTEM_INIT... [OK]</div>
+          <div>> SUBJECT_IDENTIFIED: <span class="highlight">Arsalan Aftab Ali</span></div>
+          <br/>
+          <div>[ CORE_ROLE ]    : AI &amp; DevOps Engineer</div>
+          <div>[ LOCATION ]     : Karachi, Pakistan</div>
+          <div>[ STATUS ]       : Building scalable solutions</div>
+          <br/>
+          <div>[ TECH_STACK_SCAN ]</div>
+          <div>> AI_TOOLS     : Gemini, Hugging Face, Langchain, RAG, Voiceflow</div>
+          <div>> DEVOPS       : Docker, Terraform, Kubernetes, CI/CD, Linux</div>
+	  <div>> CLOUD	      : AWS, Azure</div>
+          <div>> PLATFORMS    : GitHub</div>
+          <br/>
+          <div>> CONNECTION_ESTABLISHED <span class="cursor">_</span></div>
+        </div>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>
