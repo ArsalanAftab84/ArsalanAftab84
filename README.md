@@ -1,4 +1,4 @@
-## Hi there 👋
+<img src="terminal-profile.svg" width="100%" alt="My Terminal Profile" />
 
 <!--
 **ArsalanAftab84/ArsalanAftab84** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
