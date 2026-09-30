@@ -254,250 +254,293 @@
   <!-- ===================================================== -->
   <!-- ROBOT HUD CIRCLE -->
   <!-- ===================================================== -->
+<!-- ================= ROBOT HUD ================= -->
 
-  <circle
-    cx="170"
-    cy="177"
-    r="91"
-    fill="#06101C"
-    stroke="#123B59"
-    stroke-width="1"
-  />
+<!-- Outer HUD glow -->
+<circle cx="170" cy="171"
+        r="82"
+        fill="#03101c"
+        stroke="#063a59"
+        stroke-width="2"/>
 
-  <circle
-    cx="170"
-    cy="177"
-    r="82"
-    fill="none"
-    stroke="url(#cyanBlue)"
-    stroke-width="2"
-    opacity="0.9"
-  />
+<circle cx="170" cy="171"
+        r="76"
+        fill="none"
+        stroke="#0066ff"
+        stroke-width="1"
+        stroke-dasharray="3 7"
+        opacity="0.7"/>
 
-  <circle
-    cx="170"
-    cy="177"
-    r="72"
-    fill="none"
-    stroke="#0066FF"
-    stroke-width="1"
-    stroke-dasharray="4 7"
-    opacity="0.7"
-  />
+<circle cx="170" cy="171"
+        r="70"
+        fill="none"
+        stroke="#00e5ff"
+        stroke-width="2"
+        stroke-dasharray="38 8 8 8"
+        opacity="0.8"/>
 
-  <!-- HUD brackets -->
+<!-- HUD side markers -->
+<path d="M91 171 H105"
+      stroke="#00e5ff"
+      stroke-width="2"/>
 
-  <path
-    d="M100 151V137Q100 130 107 130H120"
-    stroke="#00E5FF"
-    stroke-width="2"
-  />
+<path d="M235 171 H249"
+      stroke="#00e5ff"
+      stroke-width="2"/>
 
-  <path
-    d="M240 151V137Q240 130 233 130H220"
-    stroke="#00E5FF"
-    stroke-width="2"
-  />
+<path d="M170 91 V104"
+      stroke="#00e5ff"
+      stroke-width="2"/>
 
-  <path
-    d="M100 203V217Q100 224 107 224H120"
-    stroke="#0066FF"
-    stroke-width="2"
-  />
-
-  <path
-    d="M240 203V217Q240 224 233 224H220"
-    stroke="#0066FF"
-    stroke-width="2"
-  />
+<path d="M170 238 V251"
+      stroke="#0066ff"
+      stroke-width="2"/>
 
 
-  <!-- ===================================================== -->
-  <!-- ROBOT -->
-  <!-- ===================================================== -->
+<!-- ================= ROBOT HEAD ================= -->
 
-  <!-- Antenna -->
-  <line
-    x1="170"
-    y1="107"
-    x2="170"
-    y2="92"
-    stroke="#00E5FF"
-    stroke-width="3"
-  />
+<!-- Head outer -->
+<rect x="120"
+      y="115"
+      width="100"
+      height="76"
+      rx="29"
+      fill="#b9c8d4"
+      stroke="#e8f7ff"
+      stroke-width="2"/>
 
-  <circle
-    cx="170"
-    cy="87"
-    r="6"
-    fill="#00E5FF"
-    filter="url(#glow)"
-    class="pulse"
-  />
+<!-- Head shadow -->
+<path d="M121 159
+         Q121 191 151 191
+         H190
+         Q219 191 219 159
+         V171
+         Q219 198 191 205
+         H149
+         Q121 198 121 171 Z"
+      fill="#748898"
+      opacity="0.65"/>
 
-  <!-- Robot ears -->
+<!-- Face screen -->
+<rect x="132"
+      y="127"
+      width="76"
+      height="53"
+      rx="21"
+      fill="#061321"
+      stroke="#182d3e"
+      stroke-width="2"/>
 
-  <rect
-    x="99"
-    y="154"
-    width="13"
-    height="40"
-    rx="5"
-    fill="#0A2034"
-    stroke="#0066FF"
-    stroke-width="2"
-  />
+<!-- Face screen glow -->
+<rect x="137"
+      y="132"
+      width="66"
+      height="43"
+      rx="17"
+      fill="#071a29"
+      stroke="#00dfff"
+      stroke-width="0.7"
+      opacity="0.8"/>
 
-  <rect
-    x="228"
-    y="154"
-    width="13"
-    height="40"
-    rx="5"
-    fill="#0A2034"
-    stroke="#0066FF"
-    stroke-width="2"
-  />
 
-  <!-- Ear lights -->
+<!-- ================= ROBOT EYES ================= -->
 
-  <circle
-    cx="105"
-    cy="174"
-    r="3"
-    fill="#00E5FF"
-    class="pulse"
-  />
+<!-- Left eye -->
+<path d="M148 151
+         Q153 145 158 151
+         Q153 158 148 151Z"
+      fill="#00e5ff"
+      filter="url(#glow)"/>
 
-  <circle
-    cx="235"
-    cy="174"
-    r="3"
-    fill="#00E5FF"
-    class="pulse"
-  />
+<!-- Right eye -->
+<path d="M182 151
+         Q187 145 192 151
+         Q187 158 182 151Z"
+      fill="#00e5ff"
+      filter="url(#glow)"/>
 
-  <!-- Robot head -->
+<!-- Robot smile -->
+<path d="M157 163
+         Q170 173 183 163"
+      fill="none"
+      stroke="#00e5ff"
+      stroke-width="2"
+      stroke-linecap="round"/>
 
-  <rect
-    x="112"
-    y="112"
-    width="116"
-    height="102"
-    rx="29"
-    fill="url(#robot)"
-    stroke="#00E5FF"
-    stroke-width="2.5"
-  />
 
-  <!-- Head highlight -->
+<!-- ================= ROBOT HEADSET ================= -->
 
-  <path
-    d="M135 120H205"
-    stroke="#FFFFFF"
-    stroke-width="1"
-    opacity="0.25"
-  />
+<!-- Left headset -->
+<path d="M121 133
+         Q108 137 109 154
+         V167"
+      fill="none"
+      stroke="#738b9d"
+      stroke-width="7"
+      stroke-linecap="round"/>
 
-  <!-- Eyes -->
+<rect x="105"
+      y="153"
+      width="13"
+      height="25"
+      rx="6"
+      fill="#879aaa"
+      stroke="#d4e8f2"
+      stroke-width="1"/>
 
-  <circle
-    cx="145"
-    cy="159"
-    r="11"
-    fill="#061321"
-    stroke="#00E5FF"
-    stroke-width="2"
-  />
+<!-- Right headset -->
+<path d="M219 133
+         Q232 137 231 154
+         V167"
+      fill="none"
+      stroke="#738b9d"
+      stroke-width="7"
+      stroke-linecap="round"/>
 
-  <circle
-    cx="195"
-    cy="159"
-    r="11"
-    fill="#061321"
-    stroke="#00E5FF"
-    stroke-width="2"
-  />
+<rect x="222"
+      y="153"
+      width="13"
+      height="25"
+      rx="6"
+      fill="#879aaa"
+      stroke="#d4e8f2"
+      stroke-width="1"/>
 
-  <circle
-    cx="145"
-    cy="159"
-    r="5"
-    fill="#00E5FF"
-    filter="url(#glow)"
-    class="pulse"
-  />
 
-  <circle
-    cx="195"
-    cy="159"
-    r="5"
-    fill="#00E5FF"
-    filter="url(#glow)"
-    class="pulse"
-  />
+<!-- ================= ROBOT BODY ================= -->
 
-  <!-- Robot face -->
+<!-- Neck -->
+<rect x="157"
+      y="190"
+      width="26"
+      height="13"
+      rx="5"
+      fill="#899cab"/>
 
-  <path
-    d="M151 188Q170 201 189 188"
-    fill="none"
-    stroke="#00E5FF"
-    stroke-width="3"
-    stroke-linecap="round"
-  />
+<!-- Body -->
+<path d="M137 205
+         Q145 196 157 196
+         H183
+         Q195 196 203 205
+         L215 235
+         Q217 243 208 246
+         H132
+         Q123 243 125 235 Z"
+      fill="#c7d4dc"
+      stroke="#e6f5fb"
+      stroke-width="1.5"/>
 
-  <!-- Robot body -->
+<!-- Body dark panel -->
+<rect x="148"
+      y="208"
+      width="44"
+      height="26"
+      rx="7"
+      fill="#071522"
+      stroke="#4d7185"
+      stroke-width="1"/>
 
-  <path
-    d="M127 216
-       Q127 207 137 207
-       H203
-       Q213 207 213 216
-       L220 266
-       H120
-       Z"
-    fill="#081A2B"
-    stroke="#0066FF"
-    stroke-width="2.5"
-  />
+<!-- Body status -->
+<circle cx="159"
+        cy="221"
+        r="3"
+        fill="#00e5ff"
+        class="pulse"/>
 
-  <!-- Chest display -->
+<line x1="166" y1="218"
+      x2="183" y2="218"
+      stroke="#5e7d8f"
+      stroke-width="2"/>
 
-  <rect
-    x="148"
-    y="226"
-    width="44"
-    height="29"
-    rx="5"
-    fill="#061321"
-    stroke="#123B59"
-  />
+<line x1="166" y1="224"
+      x2="178" y2="224"
+      stroke="#5e7d8f"
+      stroke-width="2"/>
 
-  <!-- Code icon on robot -->
 
-  <path
-    d="M161 234L154 241L161 248"
-    stroke="#00E5FF"
-    stroke-width="2"
-    stroke-linecap="round"
-  />
+<!-- ================= ROBOT ARM ================= -->
 
-  <path
-    d="M179 234L186 241L179 248"
-    stroke="#00E5FF"
-    stroke-width="2"
-    stroke-linecap="round"
-  />
+<!-- Left arm -->
+<path d="M137 210
+         Q124 216 119 229"
+      fill="none"
+      stroke="#aebfc9"
+      stroke-width="11"
+      stroke-linecap="round"/>
 
-  <line
-    x1="175"
-    y1="233"
-    x2="165"
-    y2="249"
-    stroke="#FFFFFF"
-    stroke-width="2"
-  />
+<!-- Right arm -->
+<path d="M203 210
+         Q215 216 220 228"
+      fill="none"
+      stroke="#aebfc9"
+      stroke-width="11"
+      stroke-linecap="round"/>
+
+
+<!-- ================= LAPTOP ================= -->
+
+<!-- Laptop screen -->
+<path d="M138 218
+         L204 218
+         L200 254
+         L142 254 Z"
+      fill="#0a1b2b"
+      stroke="#00bde5"
+      stroke-width="2"/>
+
+<!-- Laptop inner glow -->
+<path d="M144 224
+         L198 224
+         L195 248
+         L147 248 Z"
+      fill="#06111e"
+      stroke="#07577a"
+      stroke-width="1"/>
+
+<!-- Code icon -->
+<text x="171"
+      y="242"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="18"
+      font-weight="bold"
+      fill="#00e5ff">
+    &lt;/&gt;
+</text>
+
+<!-- Laptop base -->
+<path d="M130 254
+         H212
+         L220 260
+         H122 Z"
+      fill="#8ca0ad"
+      stroke="#d8eaf2"
+      stroke-width="1"/>
+
+<path d="M122 260 H220"
+      stroke="#00e5ff"
+      stroke-width="2"/>
+
+
+<!-- ================= DIGITAL PARTICLES ================= -->
+
+<circle cx="105" cy="111"
+        r="2"
+        fill="#00e5ff"
+        class="pulse"/>
+
+<circle cx="232" cy="105"
+        r="2"
+        fill="#0066ff"
+        class="pulse"/>
+
+<circle cx="101" cy="202"
+        r="1.5"
+        fill="#00e5ff"/>
+
+<circle cx="240" cy="210"
+        r="1.5"
+        fill="#0066ff"/>
 
 
   <!-- ===================================================== -->
@@ -582,7 +625,7 @@
     font-size="11"
     font-weight="700"
   >
-    ONLINE // BUILDING
+    DEVELOPING WEB APPS
   </text>
 
 
@@ -598,7 +641,7 @@
   font-size="19"
   font-weight="700"
 >
-  Building AI-powered systems &amp; automation.
+  Building AI-powered systems &amp; automation workflows.
 </text>
 
 <text
