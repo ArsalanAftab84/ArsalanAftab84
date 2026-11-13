@@ -6,11 +6,6 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/ArsalanAftab84/ArsalanAftab84/output/github-contribution-grid-snake.svg">
 </picture>
 
-### 📊 GitHub Stats & Contributions
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ArsalanAftab84&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-</div>
-
 <br>
 
 ### 🛠️ Languages & Tools
